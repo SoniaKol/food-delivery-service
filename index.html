@@ -70,7 +70,9 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="header-order-button">Order Now</button>
+        <button type="button" class="header-order-button" id="order-btn">
+          Order Now
+        </button>
         <button type="button" class="header-menu-button" id="burger-menu-btn">
           <svg class="header-menu-btn-icon" width="28" height="28">
             <use href="./images/icons.svg#icon-mobile-menu-btn"></use>
@@ -90,7 +92,9 @@
                 Order now and enjoy a hassle-free and delicious meal from the
                 comfort of your own home.
               </p>
-              <button type="button" class="hero-btn">Order Now</button>
+              <button type="button" class="hero-btn" id="hero-order-btn">
+                Order Now
+              </button>
               <div class="hero-img-wrap">
                 <div class="hero-img-frame"></div>
                 <img
@@ -184,7 +188,9 @@
               </li>
             </ul>
             <div class="offer-btn-container">
-              <button type="button" class="offer-btn">Order Now</button>
+              <button type="button" class="offer-btn" id="offer-btn">
+                Order Now
+              </button>
               <div class="offer-link-container">
                 <a href="" class="offer-link">Read More </a>
                 <button type="button" class="offer-link-button">
@@ -451,7 +457,53 @@
         </div>
       </div>
     </footer>
-
+    <div class="backdrop">
+      <div class="modal">
+        <div class="container">
+          <button type="button" class="close-btn" id="close-btn">
+            <svg width="11" height="11" class="close-btn-icon">
+              <use href="./images/icons.svg#icon-close-btn"></use>
+            </svg>
+          </button>
+          <p class="modal-title">Order Form</p>
+          <form action="" class="modal-form">
+            <div class="modal-input-wrap">
+              <label for="modal-input-name" class="modal-lable">Name</label>
+              <input
+                type="text"
+                class="modal-input"
+                id="modal-input-name"
+                placeholder="Your name"
+                required
+              />
+            </div>
+            <div class="modal-input-wrap">
+              <label for="modal-input-phone" class="modal-lable"
+                >Phone number</label
+              >
+              <input
+                type="text"
+                class="modal-input"
+                id="modal-input-phone"
+                placeholder="+38(0_ _) _ _ _   _ _   _ _"
+                required
+              />
+            </div>
+            <div class="modal-input-wrap">
+              <label for="modal-input-email" class="modal-lable">E-mail</label>
+              <input
+                type="text"
+                class="modal-input"
+                id="modal-input-email"
+                placeholder="example@gmail.com"
+                required
+              />
+            </div>
+            <button type="submit" class="modal-btn">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
     <script type="module" src="./app/app.js"></script>
   </body>
 </html>
